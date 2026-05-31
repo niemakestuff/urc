@@ -85,6 +85,7 @@ Note that this is the original but you are free to add or change any rules for y
   print(a + b)
   <<<|
   ```
+- There is no "key" or "field" in `urc`. You must map the config manually in your code by either blindly mapping the indices of the config, or by doing pattern matching like regex. Data structurally speaking, a `urc` is just a nested array. Which also means the order of the config must be preserved.
 
 ## Basic implementation idea (Python)
 ```py
