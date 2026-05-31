@@ -8,6 +8,7 @@ This is the specification for `urc`, a user-readable configuration format.
 * [Quick look](#quick-look)
 * [Format rules](#format-rules)
 * [Basic implementation idea](#basic-implementation-idea-python)
+* [Why is urc not strict?](#why-is-urc-not-strict)
 * [Some cool things you can do](#some-cool-things-you-can-do)
 
 ## The goal
@@ -134,6 +135,9 @@ This method can become unmaintainable really fast as you add more config.
 We can implement a more scalable and maintainable solution.
 Overall, I am not really concerned on how it is implemented. As long as it does the job.
 I may or may not create a Python library for this. But I will definitely be making a library for this for TypeScript and Zig.
+
+## Why is `urc` not strict?
+As you might have already noticed, I keep mentioning about changing the rules and syntax and making your own implementation. At the end of the day, the goal of `urc` is to make a configuration format that works for both users and developers. If your users understand your implementation, then it's doing its job. Just treat `urc` as a foundation you build upon.
 
 ## Some cool things you can do
 - You can add a version to your config using the existing functionality:
